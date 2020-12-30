@@ -58,8 +58,8 @@
 
         <h3>About</h3>
         <div>
-          <p>This website was created by <a href='https://twitter.com/anvaka' target='_blank'>@anvaka</a>.
-          It downloads roads from OpenStreetMap and renders them with WebGL.
+          <p>This website was created by <a href='https://twitter.com/anvaka' target='_blank'>@anvaka</a> and modified by <a href='https://twitter.com/bmgnrs' target='_blank'>@bmgnrs</a>.
+          It downloads <span style="text-decoration: line-through;">roads</span>railways from OpenStreetMap and renders them with WebGL.
           </p>
           <p>
            You can find the entire <a href='https://github.com/anvaka/city-roads'>source code here</a>. 
