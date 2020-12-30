@@ -8,7 +8,8 @@ export default {
   //areaServer: 'https://anvaka.github.io/index-large-cities/data',
   //areaServer: 'http://localhost:8085', // This is un-commented when I develop cache locally
   // So, using S3
-  areaServer: 'https://city-roads.s3-us-west-2.amazonaws.com/nov-02-2020',
+  areaServer: 'http://localhost',
+  
 
   getDefaultLineColor() {
     return tinycolor('rgba(26, 26, 26, 0.8)');
