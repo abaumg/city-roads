@@ -16,17 +16,17 @@ export default class Query {
    * This gets anything marked as a highway, which has its own pros and cons.
    * See https://github.com/anvaka/city-roads/issues/20
    */
-  static Road = 'way[highway]';
+  static Road = 'way[railway~"^(funicular|light_rail|miniature|monorail|narrow_gauge|rail|subway|tram|halt|platform|station)"]';
 
   /**
    * Reduced set of roads
    */
-  static RoadBasic = 'way[highway~"^(motorway|primary|secondary|tertiary)|residential"]';
+  static RoadBasic = 'way[railway~"^(funicular|light_rail|miniature|monorail|narrow_gauge|rail|subway|tram|halt|platform|station)"]';
 
   /**
    * More accurate representation of the roads by @RicoElectrico.
    */
-  static RoadStrict = 'way[highway~"^(((motorway|trunk|primary|secondary|tertiary)(_link)?)|unclassified|residential|living_street|pedestrian|service|track)$"][area!=yes]';
+  static RoadStrict = 'way[highway~"^(motorway|primary|secondary|tertiary)|residential"]';
 
   static runFromOptions(loadOptions, progress) {
     return loadOptions.getQueryTemplate().then(boundedQuery => {
